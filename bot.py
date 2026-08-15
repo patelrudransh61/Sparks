@@ -1235,4 +1235,15 @@ async def main():
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    application = ApplicationBuilder().token(TOKEN).build()
+
+    application.add_handler(CommandHandler("start", start))
+    application.add_handler(CallbackQueryHandler(admin_actions, pattern="^(app|rej)_"))
+    application.add_handler(CallbackQueryHandler(button_handler))
+    application.add_handler(MessageHandler(filters.TEXT & (~filters.COMMAND), handle_message))
+
+    print("Sparks Bot successfully start ho gaya hai...")
+    
+    # Webhook hata kar polling start karne ke liye
+    application.run_polling(drop_pending_updates=True)
+    
