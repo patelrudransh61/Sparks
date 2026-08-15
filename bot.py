@@ -21,7 +21,7 @@ from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.storage.memory import MemoryStorage
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "PUT_BOT_TOKEN_HERE")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8883287876:AAEtuHY9qoR8PrrsZR87E6mSQQnDTmq9JtU")
 
 # Put the REAL numeric Telegram IDs of both admins here.
 # Usernames are shown to users, but numeric IDs should be used for authorization.
