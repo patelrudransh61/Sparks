@@ -32,6 +32,7 @@ ADMIN_IDS = {
 ADMIN_USERNAMES = ["@kritika_pridictions", "@sparsh_zii"]
 
 REQUIRED_CHANNELS = [
+    ("BotsBySonderoton", "Bots By Sonderoton"),
     ("public_sg_updated", "Public SG Updated"),
     ("public_sg_community", "Public SG Community"),
     ("godfather_pridiction", "Godfather Prediction"),
